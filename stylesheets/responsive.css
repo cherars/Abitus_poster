@@ -1,0 +1,784 @@
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .machine{
+      background: url(../images/machine2.svg);
+      height: 190vw;
+      background-repeat: no-repeat;
+
+  }
+
+  .inside{
+
+padding-bottom: 4vw;
+padding-top: 12vw;
+  }
+
+  .row {
+      margin-bottom: 7vw;
+      border-bottom: 7px solid grey;
+  }
+
+  .box {
+      width: 15vw;
+      height: 15vw;
+      margin:  0 4vw;
+      display: grid;
+      place-items: center;
+      transition: transform 1s ease-in-out;
+      position: relative;
+  }
+
+  .box:after{
+      content: '';
+      display: block;
+      width: 6vw;
+      height:  2vw;
+      background: #9D9D9C;
+      border-radius: 5px;
+      position: absolute;
+      bottom: -0.2vw;
+  }
+
+  .input_panel{
+      background-color: #2BABE2;
+      position: absolute;
+      width: auto;
+      z-index: 6;
+      right: 2.5vw;
+      top: 25vw;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      padding: 2vw 2vw;
+      overflow:  hidden;
+      height:  auto;
+  }
+
+  .screen{
+    width:  13vw;
+    height:  13vw;
+    background: #000;
+    background-image: url(../images/icon1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60% 60%;
+    margin-bottom: 2vw;
+    animation: change 1s linear infinite;
+    }
+
+    .input_buttons{
+      width:  13vw;
+      height:  19vw;
+      background-image: url(../images/buttons2.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+
+      }
+
+      .part1{
+        position: absolute;
+        z-index: 5;
+        right: 2vw;
+        top: 95vw;
+        width:  18vw;
+        height:  5vw;
+      }
+
+      .part2{
+        position: absolute;
+        z-index: 1;
+        right: 2vw;
+        top: 97.5vw;
+        width:  18vw;
+        height:  10vw;
+      }
+
+
+      .check{
+
+      background-color: #fff;
+      width: 9vw;
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right:  6.5vw;
+      top:  98vw;
+      z-index: 2;
+      transform: translateY(-10vw);
+      }
+
+
+      .vic{
+
+      display: block;
+      width: 13vw;
+      height: 20vw;
+      background: #63318A;
+      position: absolute;
+      right:  3.5vw;
+      top:  79vw;
+      z-index: 3;
+      animation: none;
+      }
+
+      @keyframes daicheck{
+        0%{
+            transform: translateY(-7vw);
+        }
+        1%{
+             transform: translateY(1vw);
+        }
+      }
+
+      .cash_in{
+          background-color: #F9AD1D;
+          position: absolute;
+          width: auto;
+          z-index: 6;
+          right: 2vw;
+          top: 80vw;
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: flex-start;
+          padding: 2vw 2vw;
+          overflow:  hidden;
+          height:  auto;
+      }
+
+      .hole{
+
+        width:  14vw;
+        height:  2.5vw;
+        background-color: white;
+
+      }
+      .light{
+
+        width:  14vw;
+        height:  1.5vw;
+        background-color: #2DABE3;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 60% 60%;
+        margin-bottom: 1vw;
+        animation: color 0.5s linear infinite;
+      }
+
+      .triangle{
+
+        width: 13vw;
+        height: 20vw;
+        position: absolute;
+        right:  4.5vw;
+        top:  65vw;
+        z-index: 6;
+
+      }
+
+      .key{
+
+        width: 5vw;
+        height: 11vw;
+        position: absolute;
+        right:  1.5vw;
+        top:  141vw;
+        z-index: 6;
+
+      }
+
+
+      .cash_out{
+          background-color: #F9AD1D;
+          position: absolute;
+          width: auto;
+          z-index: 6;
+          right: 2vw;
+          top: 115vw;
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: flex-start;
+          padding: 2vw 2vw;
+          overflow:  hidden;
+          height:  auto;
+      }
+
+      .base{
+
+        width:  14vw;
+        height:  7vw;
+        background-color: white;
+
+      }
+      .out{
+
+        width:  14vw;
+        height:  7vw;
+        background-color: #F9AD1D;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 60% 60%;
+        margin-bottom: 1vw;
+      }
+
+
+      .space{
+        position: absolute;
+        right: 29vw;
+        top: 134vw;
+        width: 54vw;
+        height: 21vw;
+        background-color: white;
+        overflow: hidden;
+
+      }
+
+      .push{
+        width: 56vw;
+        height: 21vw;
+        background-color: #63318A;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/push.svg);
+        background-size: 60%;
+        z-index: 102;
+
+      }
+
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+          .machine{
+              background: url(../images/machine3.svg);
+              height: 234vw;
+              background-repeat: no-repeat;
+
+          }
+
+          .inside{
+
+
+              width: 48%;
+              z-index: 1;
+              left: 20vw;
+              top: 32vw;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+
+              padding: 5vw 0;
+              padding-bottom: 0vw;
+              padding-top: 14vw;
+              overflow:  hidden;
+          }
+
+
+          .row {
+              margin-bottom: 15vw;
+              border-bottom: 6px solid grey;
+          }
+          .box {
+              width: 15vw;
+              height: 15vw;
+              margin:  0 4vw;
+              display: grid;
+              place-items: center;
+              transition: transform 1s ease-in-out;
+              position: relative;
+          }
+          .box:hover {
+              transform: scale(1.2);
+          }
+
+          .box:after{
+              content: '';
+              display: block;
+              width: 6vw;
+              height:  2vw;
+              background: #9D9D9C;
+              border-radius: 5px;
+              position: absolute;
+              bottom: -0.2vw;
+          }
+
+          .input_panel{
+              background-color: #2BABE2;
+              position: absolute;
+              width: auto;
+              z-index: 6;
+              right: 3vw;
+              top: 33vw;
+              display: flex;
+              flex-direction: column-reverse;
+              align-items: flex-start;
+              padding: 2vw 2vw;
+              overflow:  hidden;
+              height:  auto;
+          }
+
+
+          .screen{
+            width:  10vw;
+            height:  15vw;
+            background: #000;
+            background-image: url(../images/icon1.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 60% 60%;
+            margin-bottom: 2vw;
+            animation: change 1s linear infinite;
+            }
+
+            .input_buttons{
+              width:  10vw;
+              height:  19vw;
+              background-image: url(../images/buttons3.svg);
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: 100% 100%;
+
+              }
+
+          .part1{
+            position: absolute;
+            z-index: 5;
+            right: 3vw;
+            top: 106vw;
+            width:  14vw;
+            height:  5vw;
+        }
+
+        .part2{
+            position: absolute;
+            z-index: 1;
+            right: 3vw;
+            top: 107vw;
+            width:  14vw;
+            height:  10vw;
+        }
+
+
+        .check{
+
+          background-color: #fff;
+          width: 7vw;
+          text-align: center;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          right:  6.45vw;
+          top:  109vw;
+          z-index: 2;
+          transform: translateY(-10vw);
+        }
+
+
+        .vic{
+
+          display: block;
+          width: 13vw;
+          height: 20vw;
+          background: #63318A;
+          position: absolute;
+          right:  3.5vw;
+          top:  88vw;
+          z-index: 3;
+          animation: none;
+        }
+
+        @keyframes daicheck{
+          0%{
+              transform: translateY(-10vw);
+          }
+          1%{
+               transform: translateY(1vw);
+          }
+        }
+        .cash_in{
+            background-color: #F9AD1D;
+            position: absolute;
+            width: auto;
+            z-index: 6;
+            right: 3vw;
+            top: 90vw;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            padding: 2vw 2vw;
+            overflow:  hidden;
+            height:  auto;
+        }
+
+        .hole{
+
+          width:  10vw;
+          height:  2.5vw;
+          background-color: white;
+
+        }
+        .light{
+
+          width:  10vw;
+          height:  1.5vw;
+          background-color: #2DABE3;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 60% 60%;
+          margin-bottom: 1vw;
+          animation: color 0.5s linear infinite;
+        }
+
+        .triangle{
+
+          width: 11vw;
+          height: 20vw;
+          position: absolute;
+          right:  4.5vw;
+          top:  75vw;
+          z-index: 6;
+
+        }
+
+        .cash_out{
+            background-color: #F9AD1D;
+            position: absolute;
+            width: auto;
+            z-index: 6;
+            right: 3vw;
+            top: 125vw;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            padding: 2vw 2vw;
+            overflow:  hidden;
+            height:  auto;
+        }
+
+        .base{
+
+          width:  10vw;
+          height:  7vw;
+          background-color: white;
+
+        }
+        .out{
+
+          width:  10vw;
+          height:  7vw;
+          background-color: #F9AD1D;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 60% 60%;
+          margin-bottom: 1vw;
+        }
+
+        .space{
+          position: absolute;
+          right: 32vw;
+          top: 181vw;
+          width: 48vw;
+          height: 19vw;
+          background-color: white;
+          overflow: hidden;
+
+        }
+
+        .push{
+          width: 48vw;
+          height: 19vw;
+          background-color: #63318A;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url(../images/push.svg);
+          background-size: 60%;
+          z-index: 102;
+
+        }
+
+        .key{
+
+          width: 8vw;
+          height: 18vw;
+          position: absolute;
+          right:  1.5vw;
+          top:  180vw;
+          z-index: 6;
+
+        }
+
+
+
+
+
+}
+
+
+@media only screen and (max-width: 767px){
+
+  .machine{
+      background: url(../images/machine4.svg);
+      height: 260vw;
+      background-repeat: no-repeat;
+
+  }
+
+  .inside{
+
+
+      width: 30%;
+      z-index: 1;
+      left: 28vw;
+      top: 29vw;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      padding: 10vw 0;
+      padding-bottom: 0vw;
+      padding-top: 15vw;
+      overflow:  hidden;
+  }
+
+  .row {
+      margin-bottom: 16vw;
+      border-bottom: 6px solid grey;
+  }
+  .box {
+      width: 18vw;
+      height: 18vw;
+      margin:  0 4vw;
+      display: grid;
+      place-items: center;
+      transition: transform 1s ease-in-out;
+      position: relative;
+  }
+  .box:hover {
+      transform: scale(1.2);
+  }
+
+  .box:after{
+      content: '';
+      display: block;
+      width: 7vw;
+      height:  3vw;
+      background: #9D9D9C;
+      border-radius: 5px;
+      position: absolute;
+      bottom: -0.2vw;
+  }
+
+  .input_panel{
+      background-color: #2BABE2;
+      position: absolute;
+      width: auto;
+      z-index: 6;
+      right: 5vw;
+      top: 33vw;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      padding: 2vw 2vw;
+      overflow:  hidden;
+      height:  auto;
+  }
+
+
+  .screen{
+    width:  14vw;
+    height:  15vw;
+    background: #000;
+    background-image: url(../images/icon1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60% 60%;
+    margin-bottom: 2vw;
+    animation: change 1s linear infinite;
+    }
+
+    .input_buttons{
+      width:  14vw;
+      height:  28vw;
+      background-image: url(../images/buttons4.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+
+      }
+
+  .part1{
+    position: absolute;
+    z-index: 5;
+    right: 4vw;
+    top: 130vw;
+    width:  19vw;
+    height:  5vw;
+  }
+
+  .part2{
+    position: absolute;
+    z-index: 1;
+    right: 4vw;
+    top: 132vw;
+    width:  19vw;
+    height:  10vw;
+  }
+
+
+  .check{
+
+  background-color: #fff;
+  width: 9vw;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right:  9vw;
+  top:  130vw;
+  z-index: 2;
+  transform: translateY(-7vw);
+  }
+
+
+  .vic{
+
+  display: block;
+  width: 13vw;
+  height: 20vw;
+  background: #63318A;
+  position: absolute;
+  right:  8vw;
+  top:  113vw;
+  z-index: 3;
+  animation: none;
+  }
+
+  @keyframes daicheck{
+  0%{
+      transform: translateY(-10vw);
+  }
+  1%{
+       transform: translateY(4vw);
+  }
+  }
+
+  .space{
+    position: absolute;
+    right: 42vw;
+    top: 188vw;
+    width: 31vw;
+    height: 29vw;
+    background-color: white;
+    overflow: hidden;
+
+  }
+
+  .push{
+    width: 32vw;
+    height: 29vw;
+    background-color: #63318A;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/push2.svg);
+    background-size: 50%;
+    z-index: 102;
+
+  }
+
+  .cash_in{
+      background-color: #F9AD1D;
+      position: absolute;
+      width: auto;
+      z-index: 6;
+      right: 4vw;
+      top: 105vw;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      padding: 2vw 2vw;
+      overflow:  hidden;
+      height:  auto;
+  }
+
+  .hole{
+
+    width:  15vw;
+    height:  2.5vw;
+    background-color: white;
+
+  }
+  .light{
+
+    width:  15vw;
+    height:  1.5vw;
+    background-color: #2DABE3;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60% 60%;
+    margin-bottom: 1vw;
+    animation: color 0.5s linear infinite;
+  }
+
+  .triangle{
+
+    width: 11vw;
+    height: 20vw;
+    position: absolute;
+    right:  8vw;
+    top:  90vw;
+    z-index: 6;
+
+  }
+
+  .cash_out{
+      background-color: #F9AD1D;
+      position: absolute;
+      width: auto;
+      z-index: 6;
+      right: 4vw;
+      top: 155vw;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      padding: 2vw 2vw;
+      overflow:  hidden;
+      height:  auto;
+  }
+
+  .base{
+
+    width:  15vw;
+    height:  7vw;
+    background-color: white;
+
+  }
+  .out{
+
+    width:  15vw;
+    height:  7vw;
+    background-color: #F9AD1D;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60% 60%;
+    margin-bottom: 1vw;
+  }
+
+  .key{
+
+    width: 10vw;
+    height: 20vw;
+    position: absolute;
+    right:  2vw;
+    top:  193vw;
+    z-index: 6;
+
+  }
+
+
+}

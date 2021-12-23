@@ -1,0 +1,504 @@
+
+* {
+  margin: 0;
+}
+
+.machine{
+  width: 100%;
+  height: 158vw;
+  background: url(../images/machine.svg);
+  background-size: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  z-index: 100;
+  position: relative;
+}
+
+.inside{
+background-color: white;
+position: absolute;
+width: 54%;
+z-index: 4;
+left: 17vw;
+top: 22vw;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 9vw 0;
+overflow:  hidden;
+}
+
+
+
+.input_panel{
+    background-color: #2BABE2;
+    position: absolute;
+    width: auto;
+    z-index: 6;
+    right: 2vw;
+    top: 25vw;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding: 2vw 2vw;
+    overflow:  hidden;
+    height:  auto;
+}
+
+.input_buttons{
+
+  width:  14vw;
+  height:  15vw;
+  background-image: url(../images/buttons.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+}
+.screen{
+
+  width:  14vw;
+  height:  10vw;
+  background: #000;
+  background-image: url(../images/icon5.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+  margin-bottom: 2vw;
+  animation: change 1s linear infinite;
+}
+
+.cash_in{
+    background-color: #F9AD1D;
+    position: absolute;
+    width: auto;
+    z-index: 6;
+    right: 2vw;
+    top: 70vw;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding: 2vw 2vw;
+    overflow:  hidden;
+    height:  auto;
+}
+
+.hole{
+
+  width:  14vw;
+  height:  2.5vw;
+  background-color: white;
+
+}
+.light{
+
+  width:  14vw;
+  height:  1.5vw;
+  background-color: #2DABE3;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60% 60%;
+  margin-bottom: 1vw;
+  animation: color 0.5s linear infinite;
+}
+
+.cash_out{
+    background-color: #F9AD1D;
+    position: absolute;
+    width: auto;
+    z-index: 6;
+    right: 2vw;
+    top: 103vw;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding: 2vw 2vw;
+    overflow:  hidden;
+    height:  auto;
+}
+
+.base{
+
+  width:  14vw;
+  height:  4vw;
+  background-color: white;
+
+}
+.out{
+
+  width:  14vw;
+  height:  5vw;
+  background-color: #F9AD1D;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60% 60%;
+  margin-bottom: 1vw;
+}
+
+@keyframes color {
+  0% {
+    background-color: #2DABE3
+}
+49% {
+  background-color: #2DABE3
+}
+50% {
+  background-color: #63318A
+}
+100% {
+  background-color: #63318A
+}
+}
+
+@keyframes change {
+  0% {
+    background-image: url(../images/icon5.svg);
+
+  }
+  39%{
+    background-image: url(../images/icon5.svg);
+  }
+  40% {
+    background-image: url(../images/icon2.svg);
+
+  }
+  79%{
+    background-image: url(../images/icon2.svg);
+  }
+  80%{
+    background-image: url(../images/icon3.svg);
+
+  }
+  100%{
+      background-image: url(../images/icon3.svg);
+  }
+  }
+
+.input_panel:hover .screen{
+
+  animation-play-state: paused;
+}
+
+.input_panel:hover ~ .inside .row{
+
+  animation-play-state: paused;
+}
+
+
+@keyframes n1 {
+  0% {
+    transform: translateX(0%);
+
+  }
+  100%{
+   transform: translateX(-50%);
+  }
+
+}
+
+@keyframes n2 {
+  0% {
+    transform: translateX(-50%);
+
+  }
+  100%{
+   transform: translateX(-0%);
+  }
+}
+
+.row {
+    margin-bottom: 12vw;
+    border-bottom: 8px solid grey;
+}
+
+.first {
+  margin: auto;
+  margin-bottom: 10vw;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.second {
+  margin: auto;
+  margin-bottom: 10vw;
+
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.third {
+    margin: auto;
+    margin-bottom: 10vw;
+
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+.fourth {
+      margin: auto;
+
+      z-index: 1;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+
+.items {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+
+
+
+
+.second,.fourth {
+  animation: n1 2s linear infinite;
+}
+
+.first,.third {
+  animation: n2 2s linear infinite;
+}
+
+
+/*.machine:hover ~ .inside .row{
+    animation-play-state: paused;
+}  Остановка конвеера при наведении на автомат*/
+
+
+.box {
+  width: 10vw;
+  height: 10vw;
+  margin:  0 4vw;
+  display: grid;
+  place-items: center;
+  transition: transform 1s ease-in-out;
+  position: relative;
+}
+.box:hover {
+  transform: scale(1.2);
+}
+
+.box:after{
+  content: '';
+  display: block;
+  width: 4vw;
+  height:  1.5vw;
+  background: #9D9D9C;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -0.2vw;
+}
+
+
+
+.red {
+  background-image: url(../images/lettera.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 100%;
+
+}
+.green {
+  background-image: url(../images/letteri.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 100%;
+
+}
+.blue {
+  background-image: url(../images/letterb.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 100%;
+
+}
+
+.red1 {
+  background-image: url(../images/lettert.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 100%;
+
+}
+.green1 {
+  background-image: url(../images/letterc.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 100%;
+
+}
+.blue1 {
+  background-image: url(../images/lettery.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 100%;
+
+}
+
+.aqua {
+  background-image: url(../images/book.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 100%;
+
+}
+.magenta {
+  background-image: url(../images/tree.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 100%;
+
+}
+.yellow {
+  background-image: url(../images/apple.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 100%;
+
+}
+
+
+.part1{
+    position: absolute;
+    z-index: 5;
+    right: 2vw;
+    top: 85vw;
+    width:  18vw;
+    height:  5vw;
+}
+
+.part2{
+    position: absolute;
+    z-index: 1;
+    right: 2vw;
+    top: 87.5vw;
+    width:  18vw;
+    height:  10vw;
+}
+
+
+.check{
+
+  background-color: #fff;
+  width: 9vw;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right:  6.5vw;
+  top:  90vw;
+  z-index: 2;
+  transform: translateY(-20vw);
+}
+
+
+.vic{
+
+  display: block;
+  width: 13vw;
+  height: 20vw;
+  background: #63318A;
+  position: absolute;
+  right:  4.5vw;
+  top:  67vw;
+  z-index: 3;
+  animation: none;
+}
+
+.part1:hover ~ .check{
+   animation: 360s daicheck ease;
+
+}
+.part2:hover ~ .check{
+   animation: 260s daicheck ease;
+
+}
+
+
+@keyframes daicheck{
+  0%{
+      transform: translateY(-20vw);
+  }
+  1%{
+       transform: translateY(-1vw);
+  }
+}
+
+.triangle{
+
+  width: 13vw;
+  height: 20vw;
+  position: absolute;
+  right:  4.5vw;
+  top:  55vw;
+  z-index: 6;
+
+}
+
+.space{
+  position: absolute;
+  right: 28vw;
+  top: 117vw;
+  width: 54vw;
+  height: 15vw;
+  background-color: white;
+  overflow: hidden;
+
+}
+
+.push{
+  width: 54vw;
+  height: 15vw;
+  background-color: #63318A;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/push.svg);
+  background-size: 60%;
+  z-index: 102;
+
+}
+
+.push:hover {
+animation: 2s open ease;
+}
+
+@keyframes open{
+  0%{
+      transform: translateY(0vw);
+  }
+  100%{
+       transform: translateY(-20vw);
+  }
+}
+
+.key{
+
+  width: 4vw;
+  height: 9vw;
+  position: absolute;
+  right:  1.5vw;
+  top:  121vw;
+  z-index: 6;
+
+}
