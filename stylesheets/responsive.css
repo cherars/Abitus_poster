@@ -672,16 +672,16 @@ padding-top: 12vw;
     position: absolute;
     right: 41vw;
     top: 188vw;
-    width: 31vw;
-    height: 29vw;
+    width: 29vw;
+    height: 27vw;
     background-color: white;
     overflow: hidden;
 
   }
 
   .push{
-    width: 32vw;
-    height: 29vw;
+    width: 29vw;
+    height: 27vw;
     background-color: #63318A;
     background-repeat: no-repeat;
     background-position: center;
@@ -775,7 +775,7 @@ padding-top: 12vw;
     height: 20vw;
     position: absolute;
     right:  2vw;
-    top:  193vw;
+    top:  183vw;
     z-index: 6;
 
   }
